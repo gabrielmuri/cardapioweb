@@ -164,11 +164,16 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <span>Nome Produto - Valor</span>
+          <span><strong>Nome Produto - Valor</strong></span>
+          <h4>Subtotal: <span>xx,xx</span></h4>
           <form action="incluiPedido">
               <label for="qntdItem">Quantidade:</label>
               <br>
-              <input type="number" name="qntdItem" id="" style="width: 80px;">
+              <input type="text" name="qntdItem" id="qntd" value="1" style="width: 80px;">
+
+              <a href="#" id="btnDiminui" onclick="diminuiQuantidade()"><img src="imagens/sinal.png" alt=""></a>
+              
+              <a href="#" id="btnSoma" onclick="somaQuantidade()"><img src="imagens/mais_new.png" alt=""></a>
           </form>
         </div>
         <div class="modal-footer">
