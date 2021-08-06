@@ -136,5 +136,14 @@ footer{
     top: -2px;
 }
 
+#modal-body-desc{
+    
+    text-align: center;
+}
+
+.modal-body p{
+    text-align: center;
+}
+
 
 /*----------------------*/
