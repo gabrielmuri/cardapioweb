@@ -55,9 +55,14 @@
                                 <td style="width: 150px;">Brahma Latão 473ml</td><!--nome item-->
                                 <td>R$ 5,00</td><!--valor item-->                                
                                 <td>
-                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" title="Selecionar Item">
                                         <img src="imagens/mais.png"/>
                                     </button>
+                                </td>
+                                <td>
+                                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#descModal" title="Detalhes do Item">
+                                    <img src="imagens/ver-detalhes.png" alt="">  
+                                  </button>
                                 </td>
                             </tr>
                         </table>
@@ -73,6 +78,11 @@
                                         <img src="imagens/mais.png"/>
                                     </button>
                                 </td>
+                                <td>
+                                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#descModal" title="Detalhes do Item">
+                                    <img src="imagens/ver-detalhes.png" alt="">  
+                                  </button>
+                                </td>
                             </tr>
                         </table>
                     </li>
@@ -85,6 +95,11 @@
                                     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                         <img src="imagens/mais.png"/>
                                     </button>
+                                </td>
+                                <td>
+                                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#descModal" title="Detalhes do Item">
+                                    <img src="imagens/ver-detalhes.png" alt="">  
+                                  </button>
                                 </td>
                             </tr>
                         </table>
@@ -99,6 +114,11 @@
                                         <img src="imagens/mais.png"/>
                                     </button>
                                 </td>
+                                <td>
+                                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#descModal" title="Detalhes do Item">
+                                    <img src="imagens/ver-detalhes.png" alt="">  
+                                  </button>
+                                </td>
                             </tr>
                         </table>
                     </li>
@@ -111,6 +131,11 @@
                                     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                         <img src="imagens/mais.png"/>
                                     </button>
+                                    <td>
+                                      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#descModal" title="Detalhes do Item">
+                                        <img src="imagens/ver-detalhes.png" alt="">  
+                                      </button>
+                                    </td>
                                 </td>
                             </tr>
                         </table>
@@ -129,6 +154,11 @@
                                         <img src="imagens/mais.png"/>
                                     </button>
                                 </td>
+                                <td>
+                                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#descModal" title="Detalhes do Item">
+                                    <img src="imagens/ver-detalhes.png" alt="">  
+                                  </button>
+                                </td>
                             </tr>
                         </table> 
                     </li>                    
@@ -146,6 +176,11 @@
                                         <img src="imagens/mais.png"/>
                                     </button>
                                 </td>
+                                <td>
+                                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#descModal" title="Detalhes do Item">
+                                    <img src="imagens/ver-detalhes.png" alt="">  
+                                  </button>
+                                </td>
                             </tr>
                         </table> 
                     </li>
@@ -155,12 +190,12 @@
         </div><!--center-->
     </section><!--item-group-->
 
-  <!-- Modal -->
+  <!-- Modal para incluir item ao pedido -->
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Incluir Item ao pedido</h5>
+          <h5 class="modal-title" id="exampleModalLabel">Incluir Item ao Pedido</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
@@ -183,6 +218,28 @@
       </div>
     </div>
   </div>
+
+
+
+<!-- Modal para detalhes do produto-->
+<div class="modal fade" id="descModal" tabindex="-1" aria-labelledby="descModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Brahma Latão 473ml</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" id="modal-body-desc">
+        <img src="imagens/brahmalatao.webp" alt="">
+        <p>A cerveja do buteco! Karen</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        <!--<button type="button" class="btn btn-primary">OK</button>-->
+      </div>
+    </div>
+  </div>
+</div>
     
     <!--footer-->
     <footer>
