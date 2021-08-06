@@ -136,13 +136,20 @@ footer{
     top: -2px;
 }
 
-#modal-body-desc{
-    
+#modal-body-desc{    
     text-align: center;
+}
+
+#modal-body-desc .line{
+    width: 350px;
+    text-align: center;
+    margin: 0 auto;
+    border-top: 1px solid #DEE2E6;
 }
 
 .modal-body p{
     text-align: center;
+    margin-top: 15px;
 }
 
 
