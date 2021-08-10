@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--CSS-->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Cardápio - Cadastro de Tipo do Produto</title>
+  </head>
+  <body>
+
+    <!--Inicio Navbar Menu-->
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Cardápio - 1.0</a>        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pesq_cad_grupo.html">Meus Tipos</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Opções
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Chamar um garçom</a></li>
+                <li><a class="dropdown-item" href="#">Fechar comanda</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--Fim Navbar Menu-->
+
+    
+    <section class="section-container-form">
+        <div class="center">
+            <div class="container-form">
+                <h2>Cadastro de Tipo de Produto</h2>
+                <h4 id="data"></h4>
+                <form action="">
+                    <label for="selGrupo">Selecione o Grupo:</label>
+                    <br>
+                    <select name="selGrupo" id="selGrupo">
+                        <option value="">Grupos</option>
+                    </select>
+                    <br>
+                    <br>
+                    <label for="nomeTipo">Nome do Tipo:</label>
+                    <br>
+                    <input type="text" name="nomeTipo" id="nomeTipo" placeholder="Ex: Cervejas, Sucos, Refrigerante, etc...">
+                    <br>
+                    <input type="submit" value="Cadastrar">
+                    <input type="submit" value="Editar" disabled style="background-color: gray;">
+                    <input type="submit" value="Pesquisar" style="background-color: rgb(108, 108, 190);">
+                    <input type="submit" value="Deletar" disabled style="background-color: gray;">
+                </form>
+            </div><!--container-form-->
+        </div><!--center-->
+    </section><!--section-container-form-->
+    
+       
+    <!--Scripsts-->
+    <script>
+        function Data(){
+        var data    = new Date()
+        var dia     = data.getDate()        
+        var mes     = data.getMonth()        
+        var ano     = data.getUTCFullYear()        
+        
+        switch (mes){
+            case 0:
+                mes = 'Janeiro'
+                break
+            case 1:
+                mes = 'Fevereiro'
+                break
+            case 2:
+                mes = 'Março'
+                break
+            case 3:
+                mes = 'Abril'
+                break
+            case 4:
+                mes = 'Maio'
+                break
+            case 5:
+                mes = 'Junho'
+                break
+            case 6:
+                mes = 'Julho'
+                break
+            case 7:
+                mes = 'Agosto'
+                break
+            case 8:
+                mes = 'Setembro'
+                break
+            case 9:
+                mes = 'Outubro'
+                break
+            case 10:
+                mes = 'Novembro'
+                break
+            case 11:
+                mes = 'Dezembro'
+                break
+            default:
+                mes = "inexistente"            
+
+            }    
+
+        window.document.getElementById('data').innerHTML = `${dia} de ${mes} de ${ano}`
+    
+        }
+
+        Data();
+    </script>
+    <script src="js/functions.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>   
+  </body>
+</html>
